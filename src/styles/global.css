@@ -1,0 +1,215 @@
+:root {
+  /* Define colors as colors */
+  --teal: #38bec9;
+  --green: #94c843;
+  --blue: #496ed2;
+  --black: #27241d;
+  --white: #faf9f7;
+  --grey: #a39e93;
+  --lightGrey: #e8e6e1;
+  --darkGrey: #504a40;
+  --darkBrown: #230c0f;
+  --brown: #423d33;
+  --gradient: linear-gradient(180deg, #94c843 0%, #38bec9 49.56%, #423d33 100%);
+
+  /* Define color intentions */
+  --primary: var(--teal);
+  --secondary: var(--green);
+  --tertiary: var(--blue);
+  --background: var(--black);
+  --textColor: var(--white);
+  --lineColor: var(--grey);
+  --cardBg: var(--brown);
+
+  /* Styles */
+  --line: solid 1px var(--lineColor);
+
+  /* Type */
+  --headingFont: "Ovo", serif;
+  --bodyFont: "Muli", sans-serif;
+  --baseFontSize: 100%;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
+
+  /* Elevation */
+  --level1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --level5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 3rem;
+  --borderRadius: 10px;
+}
+
+html {
+  font-size: var(--baseFontSize);
+  box-sizing: border-box;
+} /*18px*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--textColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small,
+.text_small {
+  font-size: var(--smallText);
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+p a,
+blockquote a {
+  color: var(--textColor);
+  text-decoration: none;
+  border-bottom: solid 2px var(--primary);
+}
+
+blockquote {
+  margin: 10px;
+  padding: 2em;
+  background: var(--cardBg);
+  box-shadow: var(--level3);
+  border-radius: var(--borderRadius);
+}
+
+/* FORM STYLES */
+label {
+  display: block;
+  font-size: var(--smallText);
+}
+
+input,
+textarea {
+  padding: 5px 5px;
+  border: var(--line);
+  border-radius: var(--borderRadius);
+}
+
+textarea {
+  width: 100%;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+select {
+  border: var(--line);
+}
+
+hr {
+  border-top: var(--line);
+}
+
+button {
+  --buttonColor: var(--primary);
+  --buttonTextColor: var(--white);
+  appearance: none;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonColor);
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 9px 27px;
+  box-shadow: var(--level2);
+  transition: 0.3s ease-in-out box-shadow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: var(--level3);
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+button.secondary {
+  --buttonColor: var(--secondary);
+  --buttonTextColor: var(--black);
+}
+
+button.small {
+  font-size: var(--smallText);
+}
+
+.layout {
+  /* top padding is header height plus whatever visual padding we want */
+  padding: calc(3rem + var(--headerHeight)) var(--containerPadding);
+}
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --baseFontSize: 112.5%;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: var(--cardBg);
+  box-shadow: var(--level3);
+  border-radius: var(--borderRadius);
+}
+
+/* First and last items will never have top/bottom margins */
+.card > *:first-child {
+  margin-top: 0;
+}
+.card > *:last-child {
+  margin-bottom: 0;
+}
