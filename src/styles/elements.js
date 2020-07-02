@@ -4,14 +4,15 @@ export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--black);
+  background-color: transparent;
   background-image: ${props => (props.menuOpen ? 'var(--gradient)' : 'none')};
-  height: ${props => (props.menuOpen ? '100vh' : '100%')};
+  height: ${props => (props.menuOpen ? '100vh' : '3rem')};
 
   > div {
     width: 100%;
