@@ -1,28 +1,26 @@
-import React, {useContext} from 'react';
-import {useAppState} from '../state';
+import React, { useContext } from 'react';
+import { useAppState } from '../state';
+import MobileNav from './MobileNav';
 
 const NavWrapper = () => {
-  const {isMenuOpen} = useAppState();
-  if(!isMenuOpen) return null;
+  const { isMenuOpen } = useAppState();
+  if (!isMenuOpen) return null;
 
-   return <Nav />
-
-}
+  return <Nav />;
+};
 
 const Nav = () => {
-  const {toggleMenu} = useAppState();
+  const { toggleMenu } = useAppState();
 
-  
   return (
-    <nav
-    >
+    <nav>
       <ul>
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
 export default NavWrapper;
