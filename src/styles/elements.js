@@ -13,6 +13,7 @@ export const HeaderWrapper = styled.header`
   background-color: transparent;
   background-image: ${props => (props.menuOpen ? 'var(--gradient)' : 'none')};
   height: ${props => (props.menuOpen ? '100vh' : '3rem')};
+  padding: var(--containerPadding);
 
   > div {
     width: 100%;
@@ -76,4 +77,12 @@ export const MobileNavWrapper = styled.nav`
       color: var(--white);
     }
   }
+`;
+
+export const LayoutContentWrapper = styled.main`
+  padding: var(--containerPadding);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

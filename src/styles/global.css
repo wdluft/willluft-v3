@@ -46,7 +46,7 @@
   --level5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   /* Positioning */
-  --containerPadding: 2.5%;
+  --containerPadding: 1rem;
   --headerHeight: 3rem;
   --borderRadius: 10px;
 }

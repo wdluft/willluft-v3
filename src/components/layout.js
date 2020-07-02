@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import { PageWrapper } from '../state';
 import Header from './header';
+import { LayoutContentWrapper } from '../styles/elements';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,14 +28,7 @@ const Layout = ({ children }) => {
     <>
       <PageWrapper>
         <Header />
-        <div>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
+        <LayoutContentWrapper>{children}</LayoutContentWrapper>
       </PageWrapper>
     </>
   );
