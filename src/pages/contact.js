@@ -3,9 +3,9 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
+const Contact = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Contact" />
     <div>
       <h1>Contact</h1>
       <p>@IAmWillDL</p>
@@ -13,4 +13,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default Contact;
