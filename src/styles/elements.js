@@ -1,5 +1,20 @@
 import styled from 'styled-components';
 
+export const Card = styled.div`
+  background: var(--cardBg);
+  box-shadow: var(--level3);
+  border-radius: var(--borderRadius);
+  padding: 1em;
+
+  /* First and last items will never have top/bottom margins */
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+`;
+
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -94,6 +109,12 @@ export const NavWrapper = styled.nav`
   }
 
   @media only screen and (min-width: 768px) {
+  }
+`;
+
+export const SocialsWrapper = styled.div`
+  a {
+    color: var(--white);
   }
 `;
 

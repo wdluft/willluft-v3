@@ -7,6 +7,7 @@ import Nav from './nav';
 import { useAppState } from '../state';
 import { HeaderWrapper } from '../styles/elements';
 import { useWindowWidth } from '../hooks';
+import Socials from './socials';
 
 const Header = ({ siteTitle }) => {
   const { isMenuOpen } = useAppState();
@@ -32,6 +33,7 @@ const Header = ({ siteTitle }) => {
           {width < 768 ? <Hamburger /> : ''}
         </div>
         <Nav />
+        <Socials />
       </HeaderWrapper>
     );
   }

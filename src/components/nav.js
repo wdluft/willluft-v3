@@ -11,8 +11,7 @@ const MobileNav = () => {
     <NavWrapper>
       <div className="siteNav">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/projects">Projects</Link>
       </div>
       {width >= 768 ? (
         <Link to="/">
@@ -22,31 +21,9 @@ const MobileNav = () => {
       ) : (
         ''
       )}
-      <div className="socialNav">
-        <a
-          href="https://twitter.com/iamwilldl"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="twitter"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://github.com/wdluft"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github"
-        >
-          Github
-        </a>
-        <a
-          href="https://www.linkedin.com/in/william-luft-42ab9258/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="linkedin"
-        >
-          LinkedIn
-        </a>
+      <div className="siteNav">
+        <Link to="/resume">Resume</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </NavWrapper>
   );

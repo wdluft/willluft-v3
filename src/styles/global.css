@@ -120,7 +120,7 @@ p a,
 blockquote a {
   color: var(--textColor);
   text-decoration: none;
-  border-bottom: solid 2px var(--primary);
+  border-bottom: solid 3px var(--primary);
 }
 
 blockquote {
@@ -195,21 +195,6 @@ button.small {
 .layout {
   /* top padding is header height plus whatever visual padding we want */
   padding: calc(3rem + var(--headerHeight)) var(--containerPadding);
-}
-
-.card {
-  padding: 2em;
-  background: var(--cardBg);
-  box-shadow: var(--level3);
-  border-radius: var(--borderRadius);
-}
-
-/* First and last items will never have top/bottom margins */
-.card > *:first-child {
-  margin-top: 0;
-}
-.card > *:last-child {
-  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 500px) {
