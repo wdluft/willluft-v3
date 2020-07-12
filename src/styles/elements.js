@@ -15,6 +15,11 @@ export const Card = styled.div`
   }
 `;
 
+export const TransparentCard = styled(Card)`
+  --cardBg: rgba(0, 0, 0, 0);
+  box-shadow: none;
+`;
+
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -48,6 +53,7 @@ export const HeaderWrapper = styled.header`
     max-width: 25vw;
     background-image: var(--gradient);
     box-shadow: var(--headerShadow);
+    border-right: solid 3px var(--black);
 
     img {
       max-width: 300;
@@ -99,6 +105,10 @@ export const NavWrapper = styled.nav`
   .siteNav {
     a {
       color: var(--black);
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 
@@ -115,17 +125,54 @@ export const NavWrapper = styled.nav`
 export const SocialsWrapper = styled.div`
   a {
     color: var(--white);
+
+    &:hover {
+      color: var(--grey);
+    }
   }
 `;
 
 export const LayoutContentWrapper = styled.main`
   padding: var(--containerPadding);
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 
   @media only screen and (min-width: 768px) {
-    margin-left: 38vw;
+    --containerPadding: 15vw;
+    padding: 1rem var(--containerPadding);
+    position: absolute;
+    margin-top: 0;
+    left: 25vw;
+    top: 0;
+  }
+`;
+
+export const ResumeSection = styled.section`
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+`;
+
+export const ResumeItemContainer = styled.div`
+  border-bottom: var(--line);
+
+  h3 {
+    font-weight: bold;
+    font-size: var(--h2);
+    margin-bottom: 0;
+  }
+
+  h5 {
+    margin: 1rem 0;
+  }
+
+  .position__title {
+    color: var(--primary);
   }
 `;
