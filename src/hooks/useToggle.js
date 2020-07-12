@@ -5,8 +5,6 @@ export const useToggle = initial => {
 
   const toggle = () => setToggle(prevState => !prevState);
 
-  console.log('It worked');
-
   // Rename output, multiple uses of hook
   // return [isToggled, setToggle, toggle];
 
