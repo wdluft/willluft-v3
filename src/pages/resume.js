@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { resumeInfo } from '../styles/resumeInfo';
+import { resumeInfo } from '../styles/sectionInfo';
 import { ResumeSection } from '../styles/elements';
 import ResumeItem from '../components/resumeItem';
 
