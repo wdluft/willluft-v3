@@ -33,3 +33,30 @@ export const resumeInfo = [
     description: `Graduated with Summa Cum Laude honors. Helped found the Gamers United club and organized various events and gaming tournaments.`,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: `ManaMaker`,
+    github: `https://github.com/wdluft/manamaker-version-2`,
+    siteURL: `https://manamaker.site/`,
+  },
+  {
+    id: 2,
+    title: `Random Commander`,
+    github: `https://github.com/wdluft/randomcommander`,
+    siteURL: `https://randomcommander.com/`,
+  },
+  {
+    id: 3,
+    title: `Become By Doing Blog`,
+    github: `https://github.com/wdluft/become-by-doing-blog`,
+    siteURL: `https://becomebydoing.me/`,
+  },
+  {
+    id: 4,
+    title: `Tomato Timer`,
+    github: `https://github.com/wdluft/tomato-timer`,
+    siteURL: `https://mystifying-heisenberg-8bc659.netlify.com/`,
+  },
+];
