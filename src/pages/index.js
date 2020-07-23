@@ -4,12 +4,11 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
-import { TransparentCard } from '../styles/elements';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <TransparentCard>
+    <div>
       <h3>Hi, I'm</h3>
       <h1>WILL LUFT</h1>
       <p>
@@ -43,7 +42,7 @@ const IndexPage = () => (
         Please <Link to="/contact">reach out to me</Link> if you'd like to chat
         or build something together.
       </p>
-    </TransparentCard>
+    </div>
   </Layout>
 );
 
