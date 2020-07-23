@@ -132,8 +132,8 @@ export const SocialsWrapper = styled.div`
   }
 `;
 
-export const LayoutContentWrapper = styled.main`
-  padding: var(--containerPadding);
+export const LayoutWrapper = styled.main`
+  /* padding: var(--containerPadding); */
   min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@ export const LayoutContentWrapper = styled.main`
 
   @media only screen and (min-width: 768px) {
     --containerPadding: 15vw;
-    padding: 1rem var(--containerPadding);
+    /* padding: 1rem var(--containerPadding); */
     position: absolute;
     margin-top: 0;
     left: 25vw;
@@ -175,4 +175,11 @@ export const ResumeItemContainer = styled.div`
   .position__title {
     color: var(--primary);
   }
+`;
+
+export const ProjectWrapper = styled.div`
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary);
+  padding: 1rem 25vw;
 `;

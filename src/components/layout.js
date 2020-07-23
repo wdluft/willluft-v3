@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import { PageWrapper } from '../state';
 import Header from './header';
-import { LayoutContentWrapper } from '../styles/elements';
+import { LayoutWrapper } from '../styles/elements';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       <PageWrapper>
         <Header />
-        <LayoutContentWrapper>{children}</LayoutContentWrapper>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </PageWrapper>
     </>
   );
