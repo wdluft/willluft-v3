@@ -4,11 +4,12 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import { HomeWrapper } from '../styles/elements';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div>
+    <HomeWrapper>
       <h3>Hi, I'm</h3>
       <h1>WILL LUFT</h1>
       <p>
@@ -24,7 +25,7 @@ const IndexPage = () => (
       </p>
       <p>
         I am an aspiring web developer, focusing on HTML, CSS, JavaScript, and
-        React. Below are some of the projects I've built.
+        React.
       </p>
       <p>
         To get my thoughts out of my head, I write for my blog,{' '}
@@ -42,7 +43,7 @@ const IndexPage = () => (
         Please <Link to="/contact">reach out to me</Link> if you'd like to chat
         or build something together.
       </p>
-    </div>
+    </HomeWrapper>
   </Layout>
 );
 

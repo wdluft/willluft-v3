@@ -156,6 +156,20 @@ export const LayoutWrapper = styled.main`
   }
 `;
 
+export const HomeWrapper = styled.section`
+  padding: var(--containerPadding);
+
+  h1 {
+    font-weight: bold;
+    color: var(--primary);
+  }
+
+  @media only screen and (min-width: 768px) {
+    --containerPadding: 15vw;
+    padding: 1rem var(--containerPadding);
+  }
+`;
+
 export const ResumeSection = styled.section`
   min-height: 100vh;
   width: 100%;
