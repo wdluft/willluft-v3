@@ -32,7 +32,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   background-color: transparent;
   background-image: ${props => (props.menuOpen ? 'var(--gradient)' : 'none')};
-  height: ${props => (props.menuOpen ? '100vh' : '3rem')};
+  height: ${props => (props.menuOpen ? '100%' : '3rem')};
   padding: var(--containerPadding);
 
   > div {
@@ -48,7 +48,6 @@ export const HeaderWrapper = styled.header`
   }
 
   @media only screen and (min-width: 768px) {
-    /* position: sticky; */
     height: 100vh;
     max-width: 25vw;
     background-image: var(--gradient);
@@ -98,27 +97,33 @@ export const NavWrapper = styled.nav`
     align-items: center;
 
     a {
-      font-size: var(--h4);
+      font-size: var(--h2);
+      font-weight: bold;
       text-decoration: none;
+      color: var(--black);
     }
   }
   .siteNav {
     a {
-      color: var(--black);
-
       &:hover {
         font-weight: bold;
       }
     }
   }
 
-  .socialNav {
-    a {
-      color: var(--white);
-    }
-  }
-
+  /* Tablets and large screens */
   @media only screen and (min-width: 768px) {
+    div {
+      a {
+        font-size: var(--h3);
+        font-weight: normal;
+      }
+    }
+    .lowerNav {
+      a {
+        color: var(--white);
+      }
+    }
   }
 `;
 

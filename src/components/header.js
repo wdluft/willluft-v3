@@ -8,31 +8,31 @@ import { useAppState } from '../state';
 import { HeaderWrapper } from '../styles/elements';
 import { useWindowWidth } from '../hooks';
 import Socials from './socials';
+import MobileNav from './mobileNav';
 
 const Header = ({ siteTitle }) => {
   const { isMenuOpen } = useAppState();
   const width = useWindowWidth();
 
-  // Show nav is menu is open on mobile or always on larger screens
+  // Show nav if menu is open on mobile or always on larger screens
   if (isMenuOpen || width >= 768) {
     return (
       <HeaderWrapper menuOpen>
-        <div>
+        {width < 768 ? (
           <div>
-            {width < 768 ? (
+            <div>
               <Link to="/">
                 {' '}
                 <img src={Logo} alt="Logo" />
               </Link>
-            ) : (
-              ''
-            )}
+            </div>
+            <Hamburger />
           </div>
-
-          {/* Only show hamburger if on mobile */}
-          {width < 768 ? <Hamburger /> : ''}
-        </div>
-        <Nav />
+        ) : (
+          ''
+        )}
+        {/* Show mobile nav on small screens */}
+        {width < 768 ? <MobileNav /> : <Nav />}
         <Socials />
       </HeaderWrapper>
     );
@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        {width < 768 ? <Hamburger /> : ''}
+        <Hamburger />
       </div>
     </HeaderWrapper>
   );

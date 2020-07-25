@@ -1,23 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { NavWrapper } from '../styles/elements';
-import { useWindowWidth } from '../hooks';
-import Logo from '../images/Logo.svg';
+import { useScrollFreeze } from '../hooks';
 
-const Nav = () => {
-  const width = useWindowWidth();
+const MobileNav = () => {
+  useScrollFreeze();
 
   return (
     <NavWrapper>
       <div className="siteNav">
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-      </div>
-      <Link to="/">
-        {' '}
-        <img src={Logo} alt="Logo" />
-      </Link>
-      <div className="siteNav lowerNav">
         <Link to="/resume">Resume</Link>
         <Link to="/contact">Contact</Link>
       </div>
@@ -25,4 +18,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default MobileNav;
