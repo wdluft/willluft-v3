@@ -51,7 +51,7 @@ export const HeaderWrapper = styled.header`
     height: 100vh;
     max-width: 25vw;
     background-image: var(--gradient);
-    box-shadow: var(--headerShadow);
+    box-shadow: var(--level5);
     border-right: solid 3px var(--black);
 
     img {
@@ -80,7 +80,7 @@ export const HamburgerWrapper = styled.button`
     width: 100%;
     height: 3px;
     background-color: ${props =>
-      props.menuOpen ? 'var(--black)' : 'var(--primary)'};
+      props.menuOpen ? 'var(--black)' : 'var(--white)'};
     margin: 5px 0;
   }
 `;
@@ -138,7 +138,6 @@ export const SocialsWrapper = styled.div`
 `;
 
 export const LayoutWrapper = styled.main`
-  /* padding: var(--containerPadding); */
   min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -146,13 +145,54 @@ export const LayoutWrapper = styled.main`
   align-items: center;
   margin-top: 50px;
 
+  h1 {
+    color: var(--primary);
+  }
+
+  section:nth-child(2n) {
+    background: var(--primary);
+    color: var(--black);
+
+    a {
+      color: var(--black);
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  section:nth-child(3n) {
+    background: var(--brown);
+    color: var(--white);
+
+    a {
+      color: var(--primary);
+
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  section:nth-child(5n) {
+    background: var(--black);
+    color: var(--white);
+
+    a {
+      color: var(--primary);
+
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     --containerPadding: 15vw;
-    /* padding: 1rem var(--containerPadding); */
     position: absolute;
     margin-top: 0;
-    left: 25vw;
     top: 0;
+    left: 25vw;
   }
 `;
 
@@ -167,6 +207,54 @@ export const HomeWrapper = styled.section`
   @media only screen and (min-width: 768px) {
     --containerPadding: 15vw;
     padding: 1rem var(--containerPadding);
+  }
+`;
+
+export const ProjectsSectionWrapper = styled.section`
+  padding: var(--containerPadding);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+
+  div {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+
+  img {
+    border-radius: var(--borderRadius);
+    box-shadow: var(--level3);
+  }
+
+  .projectLinks {
+    padding: 1rem;
+    a {
+      cursor: pointer;
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    --containerPadding: 15vw;
+    padding: 1rem var(--containerPadding);
+    align-items: flex-start;
+    text-align: left;
+
+    .projectLinks {
+      padding: 0;
+      a {
+        cursor: pointer;
+        padding: 0 1rem 0 0;
+      }
+    }
   }
 `;
 
@@ -194,11 +282,4 @@ export const ResumeItemContainer = styled.div`
   .position__title {
     color: var(--primary);
   }
-`;
-
-export const ProjectWrapper = styled.div`
-  min-height: 100vh;
-  width: 100%;
-  background: var(--primary);
-  padding: 1rem 25vw;
 `;
