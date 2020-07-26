@@ -54,6 +54,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: var(--baseFontSize);
   box-sizing: border-box;
 } /*18px*/
@@ -80,7 +81,7 @@ h4,
 h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: var(--headingFont);
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.15;
 }
 
@@ -119,6 +120,11 @@ blockquote a {
   color: var(--textColor);
   text-decoration: none;
   border-bottom: solid 3px var(--primary);
+}
+
+p a:hover,
+blockquote a:hover {
+  border-bottom: solid 3px var(--secondary);
 }
 
 blockquote {
@@ -188,6 +194,10 @@ button.secondary {
 
 button.small {
   font-size: var(--smallText);
+}
+
+img {
+  max-width: 100%;
 }
 
 .layout {
