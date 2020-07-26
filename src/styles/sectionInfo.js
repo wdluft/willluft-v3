@@ -40,23 +40,35 @@ export const projects = [
     title: `ManaMaker`,
     github: `https://github.com/wdluft/manamaker-version-2`,
     siteURL: `https://manamaker.site/`,
+    img: 'ManaMaker',
+    desc:
+      'Simple calculator to help figure out a manabase for Magic the Gathering. Built with React.',
   },
   {
     id: 2,
     title: `Random Commander`,
     github: `https://github.com/wdluft/randomcommander`,
     siteURL: `https://randomcommander.com/`,
+    img: 'RandomCommander',
+    desc:
+      'Selects a random card that can be a commander for a Magic the Gathering EDH deck. Built with vanilla JavaScript.',
   },
   {
     id: 3,
     title: `Become By Doing Blog`,
     github: `https://github.com/wdluft/become-by-doing-blog`,
     siteURL: `https://becomebydoing.me/`,
+    img: 'BecomeByDoing',
+    desc:
+      'Personal blog for me to write something longform. built with Gatsby/React.',
   },
   {
     id: 4,
     title: `Tomato Timer`,
     github: `https://github.com/wdluft/tomato-timer`,
     siteURL: `https://mystifying-heisenberg-8bc659.netlify.com/`,
+    img: 'TomatoTimer',
+    desc:
+      'Pomodoro timer to help schedule work/break sessions for increased productivity. Built with React.',
   },
 ];
