@@ -7,33 +7,30 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+// import { useStaticQuery, graphql } from 'gatsby';
 
 import { PageWrapper } from '../state';
 import Header from './header';
 import { LayoutWrapper } from '../styles/elements';
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout = ({ children }) => (
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
-  return (
-    <>
-      <PageWrapper>
-        <Header />
-        <LayoutWrapper>{children}</LayoutWrapper>
-      </PageWrapper>
-    </>
-  );
-};
-
+  <>
+    <PageWrapper>
+      <Header />
+      <LayoutWrapper>{children}</LayoutWrapper>
+    </PageWrapper>
+  </>
+);
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
