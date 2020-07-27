@@ -2,14 +2,16 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { ContactWrapper } from '../styles/elements';
+import ContactBoxes from '../components/contactBoxes';
 
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <div>
+    <ContactWrapper>
       <h1>Contact</h1>
-      <p>@IAmWillDL</p>
-    </div>
+      <ContactBoxes />
+    </ContactWrapper>
   </Layout>
 );
 

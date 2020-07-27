@@ -200,7 +200,6 @@ export const HomeWrapper = styled.section`
   padding: var(--containerPadding);
 
   h1 {
-    font-weight: bold;
     color: var(--primary);
   }
 
@@ -281,5 +280,46 @@ export const ResumeItemContainer = styled.div`
 
   .position__title {
     color: var(--primary);
+  }
+`;
+
+export const ContactWrapper = styled.section`
+  padding: var(--containerPadding);
+  text-align: center;
+
+  h1 {
+    color: var(--primary);
+  }
+
+  @media only screen and (min-width: 768px) {
+    --containerPadding: 15vw;
+    padding: 1rem var(--containerPadding);
+    text-align: left;
+  }
+`;
+
+export const ContactBoxWrapper = styled.div`
+  border: solid 3px var(--darkGrey);
+  background: var(--primary);
+  margin-bottom: 1rem;
+  box-shadow: var(--elevation2);
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    background: var(--brown);
+    box-shadow: var(--elevation4);
+  }
+
+  a {
+    color: var(--black);
+    transition: all 0.15s ease-in;
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+
+  h4 {
+    padding: 1rem;
+    margin: 0;
   }
 `;
