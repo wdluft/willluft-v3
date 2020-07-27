@@ -19,7 +19,7 @@ const Project = ({ project, image }) => {
   }
 
   return (
-    <ProjectsSectionWrapper id={project.title}>
+    <ProjectsSectionWrapper id={project.img}>
       <div>
         <h2>{project.title}</h2>
         <a href={project.siteURL} target="_blank" rel="noopener noreferrer">
