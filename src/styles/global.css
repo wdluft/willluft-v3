@@ -1,7 +1,7 @@
 :root {
   /* Define colors as colors */
   --teal: #38bec9;
-  --green: #94c843;
+  --green: #3ce050;
   --blue: #496ed2;
   --black: #27241d;
   --white: #faf9f7;
@@ -10,13 +10,13 @@
   --darkGrey: #504a40;
   --darkBrown: #230c0f;
   --brown: #423d33;
-  --gradient: linear-gradient(180deg, #94c843 0%, #38bec9 49.56%, #423d33 100%);
+  --gradient: linear-gradient(180deg, #3ce050 0%, #38bec9 79.17%);
 
   /* Define color intentions */
   --primary: var(--teal);
   --secondary: var(--green);
   --tertiary: var(--blue);
-  --background: var(--black);
+  --background: var(--brown);
   --textColor: var(--white);
   --lineColor: var(--grey);
   --cardBg: var(--brown);
