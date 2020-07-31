@@ -273,10 +273,6 @@ export const ContactWrapper = styled.section`
   padding: var(--containerPadding);
   text-align: center;
 
-  h1 {
-    color: var(--primary);
-  }
-
   @media only screen and (min-width: 768px) {
     --containerPadding: 15vw;
     padding: 1rem var(--containerPadding);
