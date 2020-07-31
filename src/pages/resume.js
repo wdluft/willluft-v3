@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { resumeInfo } from '../styles/sectionInfo';
-import { ResumeSection } from '../styles/elements';
-import ResumeItem from '../components/resumeItem';
+import { resume } from '../styles/sectionInfo';
+import { ResumeSectionWrapper } from '../styles/elements';
+import ResumeSection from '../components/resumeSection';
+import ResumeDescription from '../components/resumeDescription';
+import ResumeSkills from '../components/resumeSkills';
 
-const Resume = () => {
-  const [resume] = useState(resumeInfo);
-
-  return (
-    <Layout>
-      <SEO title="Resume" />
-      <h1>Resume</h1>
-      <ResumeSection>
-        {resume.map(item => (
-          <ResumeItem key={item.id} position={item} />
-        ))}
-      </ResumeSection>
-    </Layout>
-  );
-};
+const Resume = () => (
+  <Layout>
+    <SEO title="Resume" />
+    <ResumeSectionWrapper>
+      <ResumeDescription />
+    </ResumeSectionWrapper>
+    {resume.map((item, i) => (
+      <ResumeSection key={i * 5} section={item} index={i} />
+    ))}
+    <ResumeSectionWrapper id="Skills">
+      <ResumeSkills />
+    </ResumeSectionWrapper>
+  </Layout>
+);
 
 export default Resume;

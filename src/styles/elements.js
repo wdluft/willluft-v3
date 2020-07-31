@@ -15,11 +15,6 @@ export const Card = styled.div`
   }
 `;
 
-export const TransparentCard = styled(Card)`
-  --cardBg: rgba(0, 0, 0, 0);
-  box-shadow: none;
-`;
-
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -119,20 +114,15 @@ export const NavWrapper = styled.nav`
         font-weight: normal;
       }
     }
-    .lowerNav {
-      a {
-        color: var(--white);
-      }
-    }
   }
 `;
 
 export const SocialsWrapper = styled.div`
   a {
-    color: var(--white);
+    color: var(--black);
 
     &:hover {
-      color: var(--grey);
+      color: var(--brown);
     }
   }
 `;
@@ -144,10 +134,6 @@ export const LayoutWrapper = styled.main`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-
-  h1 {
-    color: var(--primary);
-  }
 
   section:nth-child(2n) {
     background: var(--primary);
@@ -162,7 +148,7 @@ export const LayoutWrapper = styled.main`
   }
 
   section:nth-child(3n) {
-    background: var(--brown);
+    background: var(--black);
     color: var(--white);
 
     a {
@@ -175,7 +161,7 @@ export const LayoutWrapper = styled.main`
   }
 
   section:nth-child(5n) {
-    background: var(--black);
+    background: var(--brown);
     color: var(--white);
 
     a {
@@ -224,10 +210,6 @@ export const ProjectsSectionWrapper = styled.section`
     width: 100%;
   }
 
-  h2 {
-    font-weight: bold;
-  }
-
   img {
     border-radius: var(--borderRadius);
     box-shadow: var(--level3);
@@ -257,29 +239,33 @@ export const ProjectsSectionWrapper = styled.section`
   }
 `;
 
-export const ResumeSection = styled.section`
+export const ResumeSectionWrapper = styled.section`
+  padding: var(--containerPadding);
   min-height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+
+  div {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    --containerPadding: 5rem 15vw;
+    padding: var(--containerPadding);
+    align-items: flex-start;
+    text-align: left;
+  }
 `;
 
-export const ResumeItemContainer = styled.div`
-  border-bottom: var(--line);
-
-  h3 {
-    font-weight: bold;
-    font-size: var(--h2);
-    margin-bottom: 0;
-  }
-
-  h5 {
-    margin: 1rem 0;
-  }
-
-  .position__title {
-    color: var(--primary);
+export const ResumeSkillsWrapper = styled.div`
+  ul {
+    padding-inline-start: 0;
+    list-style: none;
   }
 `;
 
@@ -300,13 +286,13 @@ export const ContactWrapper = styled.section`
 
 export const ContactBoxWrapper = styled.div`
   border: solid 3px var(--darkGrey);
-  background: var(--primary);
+  background: linear-gradient(180deg, #3ce050 0%, #38bec9 79.17%);
   margin-bottom: 1rem;
   box-shadow: var(--elevation2);
-  transition: all 0.15s ease-in;
+  transition: all 0.25s ease-in;
 
   &:hover {
-    background: var(--brown);
+    /* background: var(--brown); */
     box-shadow: var(--elevation4);
   }
 
@@ -314,7 +300,7 @@ export const ContactBoxWrapper = styled.div`
     color: var(--black);
     transition: all 0.15s ease-in;
     &:hover {
-      color: var(--secondary);
+      color: var(--brown);
     }
   }
 
