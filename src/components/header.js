@@ -17,39 +17,43 @@ const Header = ({ siteTitle }) => {
   // Show nav if menu is open on mobile or always on larger screens
   if (isMenuOpen || width >= 768) {
     return (
-      <HeaderWrapper menuOpen>
-        {width < 768 ? (
-          <div>
+      typeof window !== 'undefined' && (
+        <HeaderWrapper menuOpen className="header">
+          {width < 768 ? (
             <div>
-              <Link to="/">
-                {' '}
-                <img src={Logo} alt="Logo" />
-              </Link>
+              <div>
+                <Link to="/">
+                  {' '}
+                  <img src={Logo} alt="Logo" />
+                </Link>
+              </div>
+              <Hamburger />
             </div>
-            <Hamburger />
-          </div>
-        ) : (
-          ''
-        )}
-        {/* Show mobile nav on small screens */}
-        {width < 768 ? <MobileNav /> : <Nav />}
-        <Socials />
-      </HeaderWrapper>
+          ) : (
+            ''
+          )}
+          {/* Show mobile nav on small screens */}
+          {width < 768 ? <MobileNav /> : <Nav />}
+          <Socials />
+        </HeaderWrapper>
+      )
     );
   }
 
   return (
-    <HeaderWrapper>
-      <div>
+    typeof window !== 'undefined' && (
+      <HeaderWrapper className="header">
         <div>
-          <Link to="/">
-            {' '}
-            <img src={Logo} alt="Logo" />
-          </Link>
+          <div>
+            <Link to="/">
+              {' '}
+              <img src={Logo} alt="Logo" />
+            </Link>
+          </div>
+          <Hamburger />
         </div>
-        <Hamburger />
-      </div>
-    </HeaderWrapper>
+      </HeaderWrapper>
+    )
   );
 };
 
