@@ -7,7 +7,7 @@ const HamburgerMenu = () => {
 
   if (isMenuOpen) {
     return (
-      <HamburgerWrapper onClick={toggleMenu} menuOpen>
+      <HamburgerWrapper onClick={toggleMenu} menuOpen className="change">
         <div className="bar1" />
         <div className="bar2" />
         <div className="bar3" />

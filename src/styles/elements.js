@@ -16,43 +16,49 @@ export const Card = styled.div`
 `;
 
 export const HeaderWrapper = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: transparent;
-  background-image: ${props => (props.menuOpen ? 'var(--gradient)' : 'none')};
-  height: ${props => (props.menuOpen ? '100%' : '3rem')};
-  padding: var(--containerPadding);
-
-  > div {
+  &.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: ${props => (props.menuOpen ? 'var(--gradient)' : 'none')};
+    height: ${props => (props.menuOpen ? '100%' : '3rem')};
+    padding: ${props =>
+      props.menuOpen ? '1.25rem 1rem' : 'var(--containerPadding)'};
+    /* padding: var(--containerPadding); */
 
-  img {
-    width: 50px;
-    box-shadow: var(--level3);
-    border-radius: 50%;
+    > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    img {
+      width: 50px;
+      box-shadow: var(--level3);
+      border-radius: 50%;
+    }
   }
 
   @media only screen and (min-width: 768px) {
-    height: 100vh;
-    max-width: 25vw;
-    background-image: var(--gradient);
-    box-shadow: var(--level5);
-    border-right: solid 3px var(--black);
+    &.header {
+      height: 100vh;
+      max-width: 25vw;
+      background-image: var(--gradient);
+      box-shadow: var(--level5);
+      border-right: solid 3px var(--black);
 
-    img {
-      max-width: 300;
-      min-width: 175px;
-      margin-left: 25vw;
+      img {
+        max-width: 300;
+        min-width: 175px;
+        margin-left: 25vw;
+      }
     }
   }
 `;
@@ -77,6 +83,21 @@ export const HamburgerWrapper = styled.button`
     background-color: ${props =>
       props.menuOpen ? 'var(--black)' : 'var(--white)'};
     margin: 5px 0;
+  }
+
+  /* Rotate first bar */
+  &.change .bar1 {
+    transform: rotate(-45deg) translate(-12px, 12px);
+  }
+
+  /* Fade out the second bar */
+  &.change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  &.change .bar3 {
+    transform: rotate(45deg) translate(-10px, -12px);
   }
 `;
 
