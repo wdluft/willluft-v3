@@ -1,9 +1,9 @@
 <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="104" cy="104" r="100" fill="url(#paint0_linear)" stroke="#27241D" stroke-width="7"/>
-<path d="M163 41H44L41 44L44 47H163.05L166 44L163 41Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
-<path d="M163 161H44L41 164L44 167H163.05L166 164L163 161Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
-<path d="M51.5 161V47" stroke="#27241D" stroke-width="9"/>
-<path d="M155.5 161V47" stroke="#27241D" stroke-width="9"/>
+<path d="M163 37H44L41 42L44 47H163.05L166 42L163 37Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<path d="M163 161H44L41 166L44 171H163.05L166 166L163 161Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<path d="M51.5 161V47" stroke="#27241D" stroke-width="12"/>
+<path d="M155.5 161V47" stroke="#27241D" stroke-width="12"/>
 <path d="M60.5282 165L103.5 107.037L146.472 165H60.5282Z" stroke="#27241D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M146.472 43L103.5 100.963L60.528 43L146.472 43Z" stroke="#27241D" stroke-width="6"/>
 <path d="M103.5 87C99 83 88.8 71.9 84 75.5L103.5 103L123 75.5C123.8 71.5 110.667 82.8334 103.5 87Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
