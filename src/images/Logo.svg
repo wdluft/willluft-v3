@@ -1,15 +1,15 @@
-<svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="104" cy="104" r="100" fill="url(#paint0_linear)" stroke="#27241D" stroke-width="7"/>
-<path d="M163 37H44L41 42L44 47H163.05L166 42L163 37Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
-<path d="M163 161H44L41 166L44 171H163.05L166 166L163 161Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
-<path d="M51.5 161V47" stroke="#27241D" stroke-width="12"/>
-<path d="M155.5 161V47" stroke="#27241D" stroke-width="12"/>
-<path d="M60.5282 165L103.5 107.037L146.472 165H60.5282Z" stroke="#27241D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M146.472 43L103.5 100.963L60.528 43L146.472 43Z" stroke="#27241D" stroke-width="6"/>
-<path d="M103.5 87C99 83 88.8 71.9 84 75.5L103.5 103L123 75.5C123.8 71.5 110.667 82.8334 103.5 87Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
-<path d="M102.5 145C91.5 145 91 149 65.5 159.5H142.5C128.5 151 113.5 145 102.5 145Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<svg width="210" height="210" viewBox="0 0 210 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="105" cy="105" r="100" fill="url(#paint0_linear)" stroke="#27241D" stroke-width="9"/>
+<path d="M164 38H45L42 43L45 48H164.05L167 43L164 38Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<path d="M164 162H45L42 167L45 172H164.05L167 167L164 162Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<path d="M52.5 162V48" stroke="#27241D" stroke-width="12"/>
+<path d="M156.5 162V48" stroke="#27241D" stroke-width="12"/>
+<path d="M61.4117 165.25L104.5 105.149L147.588 165.25H61.4117Z" stroke="#27241D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M147.588 44.75L104.5 104.851L61.4117 44.75L147.588 44.75Z" stroke="#27241D" stroke-width="6"/>
+<path d="M104.5 87.5C99.5 86.5 98.5 86.5 94 87.4999L104.5 104L116.5 87.4999C117.3 83.5 112.5 87.4999 104.5 87.5Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
+<path d="M103.5 146C92.5 146 92 150 66.5 160.5H143.5C129.5 152 114.5 146 103.5 146Z" fill="#27241D" stroke="#27241D" stroke-width="3"/>
 <defs>
-<linearGradient id="paint0_linear" x1="104" y1="4" x2="104" y2="204" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="105" y1="5" x2="105" y2="205" gradientUnits="userSpaceOnUse">
 <stop stop-color="#3CE050"/>
 <stop offset="0.791667" stop-color="#38BEC9"/>
 </linearGradient>
